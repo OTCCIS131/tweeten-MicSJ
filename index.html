@@ -43,35 +43,69 @@
       </div><!-- /.container-fluid -->
     </nav>
 
+    <!--Main portion-->
     <div class="container">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title" style="text-align:center;">Compose new Tweet</h3>
+      <div class="row">
+      <div class "col-sm-4">
+          <img src="images/cookie.jpg" alt="Profile pic" class="img-circle img-responsive">
+      </div>
+      <!--Center Panels-->
+      <div class="col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title" style="text-align:center;">Compose new Tweet</h3>
+          </div>
+          <div class="panel-body">
+            <form class="form-group">
+              <textarea class="form-control" rows="3"></textarea>
+              <button type="button" class="btn btn-info">Info</button>
+              <button type="button" class="btn btn-info">Info</button>
+              <button type="button" class="btn btn-primary">Tweet</button>
+            </form>
+          </div>
         </div>
-        <div class="panel-body">
-          <form class="form-group">
-            <textarea class="form-control" rows="3"></textarea>
-            <button type="button" class="btn btn-info">Info</button>
-            <button type="button" class="btn btn-info">Info</button>
-            <button type="button" class="btn btn-primary">Tweet</button>
-          </form>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              <ul>
+                <li>Tweets</li>
+                <li>Tweets and Replies</li>
+                <li>Media</li>
+              </ul>
+            </h3>
+          </div>
+          <div class="panel-body">
+              Panel content
+          </div>
         </div>
       </div>
 
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">
-            <ul>
-              <li>Tweets</li>
-              <li>Tweets and Replies</li>
-              <li>Media</li>
-            </ul>
-          </h3>
+      <!--right side-->
+      <div class="col-sm-2">
+        <div class="panel panel-default">
+          <div class="panel-heading">Your Tweet Activity</div>
+          <div class="panel-body">
+              You've tweeted once!
+          </div>
         </div>
-        <div class="panel-body">
-            Panel content
+        <div class="panel panel-default">
+          <div class="panel-heading">Who to follow</div>
+            <div class="panel-body">
+              Panel content
+              <button type="button" class="btn btn-info">Follow</button>
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item">Cras justo odio
+                <button type="button" class="btn btn-info">Follow</button>
+              </li>
+              <li class="list-group-item">Dapibus ac facilisis in
+                <button type="button" class="btn btn-info">Follow</button>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+      </div>
   </body>
 </html>
