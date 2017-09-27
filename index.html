@@ -9,6 +9,12 @@
 
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+      li {
+        display: inline;
+      }
+    </style>
 
   </head>
   <body>
@@ -28,9 +34,14 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Notifications</a></li>
-            <li><a href="#">Messages</a></li>
+            <li class="active">
+              <a href="#">
+                <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                Home 
+              <span class="sr-only">(current)</span></a>
+            </li>
+            <li><a href="#"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span>Notifications</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Messages</a></li>
           </ul>
           <form class="navbar-form navbar-right">
             <div class="form-group">
@@ -46,52 +57,61 @@
     <!--Main portion-->
     <div class="container">
       <div class="row">
-      <div class "col-sm-4">
+        <div class "col-sm-4">
           <img src="images/cookie.jpg" alt="Profile pic" class="img-circle img-responsive">
-      </div>
-      <!--Center Panels-->
-      <div class="col-sm-6">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title" style="text-align:center;">Compose new Tweet</h3>
-          </div>
-          <div class="panel-body">
-            <form class="form-group">
-              <textarea class="form-control" rows="3"></textarea>
-              <button type="button" class="btn btn-info">Info</button>
-              <button type="button" class="btn btn-info">Info</button>
-              <button type="button" class="btn btn-primary">Tweet</button>
-            </form>
-          </div>
         </div>
-
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">
-              <ul>
-                <li>Tweets</li>
-                <li>Tweets and Replies</li>
-                <li>Media</li>
-              </ul>
-            </h3>
-          </div>
-          <div class="panel-body">
-              Panel content
-          </div>
-        </div>
-      </div>
-
-      <!--right side-->
-      <div class="col-sm-2">
-        <div class="panel panel-default">
-          <div class="panel-heading">Your Tweet Activity</div>
-          <div class="panel-body">
-              You've tweeted once!
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">Who to follow</div>
+      
+        <!--Center Panels-->
+        <div class="col-sm-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title" style="text-align:center;">Compose new Tweet</h3>
+            </div>
             <div class="panel-body">
+              <form class="form-group">
+                <textarea class="form-control" rows="3"></textarea>
+              </form>
+              <form>
+                <button type="button" class="btn btn-info">
+                  <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="btn btn-info"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                <button type="button" class="btn btn-primary" style="float:right">Tweet</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                <ul style="list-style-type: none;">
+                  <li>Tweets</li>
+                  <li>Tweets and Replies</li>
+                  <li>Media</li>
+                </ul>
+              </h3>
+            </div>
+            <div class="panel-body">
+              <img src="images/cookie.jpg" alt="Profile pic" class="img-circle img-responsive">
+            </div>
+          </div>
+        </div>
+
+        <!--right side-->
+        <div class="col-sm-2">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              Your Tweet Activity
+            </div>
+            <div class="panel-body">
+              You've tweeted once!
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">Who to follow</div>
+            <div class="panel-body">
+              <img src="images/cookie.jpg" alt="Profile pic" class="img-circle img-responsive" style="float:left">
               Panel content
               <button type="button" class="btn btn-info">Follow</button>
             </div>
@@ -105,7 +125,8 @@
             </ul>
           </div>
         </div>
+
       </div>
-      </div>
+    </div>
   </body>
 </html>
