@@ -12,7 +12,7 @@
 $(function(){
     $('.btn-inc').click(function(event){
         let currentCount = $(this).next().text()
-        let newCount = parseInt(currentCount.text()) + 1
-        currentCount.text(currentCount.replacewith(newCount))
+        newCount = parseInt(currentCount) + 1
+        $(this).next().text(newCount)
     })
 });
