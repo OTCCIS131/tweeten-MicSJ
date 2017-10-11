@@ -17,8 +17,9 @@ $(function(){
         $(this).next().text(newCount)
     })
 
-    $('.tweets').submit(function(e){
+    $('.tweets').submit(function(event){
         let tweet = $(this).text()
-        
+
+        event.preventDefault()
     })
 });

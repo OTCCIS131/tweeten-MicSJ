@@ -78,15 +78,17 @@
               <h3 class="panel-title" style="text-align:center;">Compose new Tweet</h3>
             </div>
             <div class="panel-body">
-              <form class="form-group">
-                <textarea class="form-control tweets" rows="3"></textarea>
-              </form>
-              <form>
+              <form class="form-group tweets">
+                <textarea class="form-control" rows="3"></textarea>
+              <!-- </form>
+              <form> -->
                 <button type="button" class="btn btn-info">
                   <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
                 </button>
                 <button type="button" class="btn btn-info"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></button>
-                <button type="button" class="btn btn-primary" style="float:right">Tweet</button>
+                <div class="pull-right">
+                  <button type="submit" class="btn btn-primary tweets">Tweet</button>
+                </div>
               </form>
             </div>
           </div>
