@@ -19,6 +19,7 @@ $(function(){
 
     $('.tweets').submit(function(event){
         let tweet = $(this).text()
+        let tweetClone = $('.original').clone()
 
         event.preventDefault()
     })
