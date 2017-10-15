@@ -17,6 +17,7 @@ $(function () {
         $(this).next().text(newCount)
     })
 
+    //adding new tweets
     $('.tweets').submit(function (event) {
         event.preventDefault()
 
@@ -26,17 +27,13 @@ $(function () {
         //ends function
         if (tweet.trim() == '') return
 
-        let newElement = ($(".original").clone()).insertBefore($(".orginal"))
-
-        // newElement.text(newElement.words)
-
-        // let newElement = $("<div>")
-        // newElement.addClass('panel panel-default')
-        // newElement.text(tweet)
-        // $(".orginal").append(newElement)
+        let newElement = ($(".original").clone(true))
+        $('.original').before(newElement)
+        $('.tweet').removeClass('orginal')
+        newElement.find('.words').text(tweet)
+        newElement.find('.btn-inc').next().text("0")
 
         newTweet = newTweet.val(' ')
-        // let tweetClone = $('.original').clone()
 
     })
 });
