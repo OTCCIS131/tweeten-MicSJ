@@ -29,7 +29,6 @@ $(function () {
 
         let newElement = ($(".original").clone(true))
         $('.original').before(newElement)
-        $('.tweet').removeClass('orginal')
         newElement.find('.words').text(tweet)
         newElement.find('.btn-inc').next().text("0")
 
